@@ -3,13 +3,29 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @AppStorage("notes") private var notes = ""
-
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    
+    @State private var showingAddScreen = false
+    
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationView {
-            TextEditor(text: $notes)
-                .navigationTitle("Notes")
-                .padding()
+            Text("Count: \(books.count)")
+                .navigationTitle("Bookworm")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showingAddScreen.toggle()
+                        } label: {
+                            Label("Add Book", systemImage: "plus")
+                        }
+                    }
+                }
+                .sheet(isPresented: $showingAddScreen) {
+                    AddBookView()
+                }
         }
     }
 }
