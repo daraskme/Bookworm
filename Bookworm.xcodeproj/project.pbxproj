@@ -14,6 +14,7 @@
 		727FDD152A5843B800BC3C39 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 727FDD132A5843B800BC3C39 /* Bookworm.xcdatamodeld */; };
 		727FDD172A58444C00BC3C39 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727FDD162A58444C00BC3C39 /* DataController.swift */; };
 		7281A24F2A5CEB5800D79243 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A24E2A5CEB5800D79243 /* AddBookView.swift */; };
+		7281A2512A5CF1CE00D79243 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281A2502A5CF1CE00D79243 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		727FDD142A5843B800BC3C39 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
 		727FDD162A58444C00BC3C39 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7281A24E2A5CEB5800D79243 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		7281A2502A5CF1CE00D79243 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		727FDCF62A5675FD00BC3C39 = {
 			isa = PBXGroup;
 			children = (
+				7281A2502A5CF1CE00D79243 /* RatingView.swift */,
 				727FDD012A5675FD00BC3C39 /* Bookworm */,
 				727FDD002A5675FD00BC3C39 /* Products */,
 			);
@@ -151,6 +154,7 @@
 				727FDD052A5675FD00BC3C39 /* ContentView.swift in Sources */,
 				727FDD172A58444C00BC3C39 /* DataController.swift in Sources */,
 				727FDD152A5843B800BC3C39 /* Bookworm.xcdatamodeld in Sources */,
+				7281A2512A5CF1CE00D79243 /* RatingView.swift in Sources */,
 				727FDD032A5675FD00BC3C39 /* BookwormApp.swift in Sources */,
 				7281A24F2A5CEB5800D79243 /* AddBookView.swift in Sources */,
 			);
